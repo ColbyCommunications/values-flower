@@ -9,11 +9,11 @@
   "private": false,
   "scripts": {
     "start": "webpack-dev-server",
-    "build": "webpack -p && webpack -p --config webpack.build.config.babel.js",
+    "build": "webpack -p",
     "lint": "eslint src/js",
     "stylelint": "stylelint src/js",
     "prepare": "npm run build",
-    "test": "jest"
+    "test": "npm run lint && npm run stylelint"
   },
   "devDependencies": {
     "babel-cli": "^6.24.1",
