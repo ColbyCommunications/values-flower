@@ -3,7 +3,6 @@ import styled from 'styled-components';
 
 import { breakpoints } from './utils/breakpoints';
 import grayAccent from '../../assets/Accent-9_GRAY.png';
-import ActiveValueContainer from './ActiveValueContainer';
 
 const headingStyles = `
     position: relative;
