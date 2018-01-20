@@ -1,8 +1,7 @@
 {
   "name": "values-flower",
   "version": "1.0.0",
-  "description":
-    "A flower-like display feature highlighting institutional values.",
+  "description": "A flower-like display feature highlighting institutional values.",
   "main": "src/js/Values.js",
   "author": "John Watkins <john.watkins@colby.edu>",
   "license": "MIT",
