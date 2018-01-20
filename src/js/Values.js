@@ -40,7 +40,6 @@ class Values extends React.Component {
     activePost !== null
       ? {
         title: posts[activePost].title.rendered,
-        link: posts[activePost].link,
         excerpt: posts[activePost].excerpt.rendered,
       }
       : {

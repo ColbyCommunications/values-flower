@@ -17,7 +17,6 @@ const StyledActiveValue = styled.article`
 
 const ActiveValue = ({
   title,
-  link,
   excerpt,
   activePost,
   calloutBoxLink,
@@ -25,11 +24,7 @@ const ActiveValue = ({
 }) => (
   <StyledActiveValue>
     <ActiveValueHeading activePost={activePost}>
-      {link === null ? (
-        <span dangerouslySetInnerHTML={{ __html: title }} />
-      ) : (
-        <a href={link} dangerouslySetInnerHTML={{ __html: title }} />
-      )}
+      <span dangerouslySetInnerHTML={{ __html: title }} />
     </ActiveValueHeading>
     <div dangerouslySetInnerHTML={{ __html: excerpt }} />
     <CalloutBox
@@ -42,7 +37,6 @@ const ActiveValue = ({
 ActiveValue.propTypes = {
   activePost: PropTypes.objectOf(PropTypes.any),
   title: PropTypes.string.isRequired,
-  link: PropTypes.string,
   excerpt: PropTypes.string.isRequired,
   calloutBoxLink: PropTypes.string.isRequired,
   calloutBoxText: PropTypes.string.isRequired,
@@ -50,7 +44,6 @@ ActiveValue.propTypes = {
 
 ActiveValue.defaultProps = {
   activePost: null,
-  link: null,
 };
 
 export default ActiveValue;

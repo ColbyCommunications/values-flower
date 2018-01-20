@@ -49,7 +49,6 @@ Each post object requires the following schema:
     excerpt: {
         rendered: 'The post excerpt.'
     },
-    link: 'The post URL',
     // The post title is used as alt text.
     // Images can be small -- they don't exceed 400px by 400px in the component.
     thumbnail: {
